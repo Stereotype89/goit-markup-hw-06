@@ -912,4 +912,9 @@ body {
 
 .privacy {
   color: var(--blue);
+  margin-top: 2px;
+}
+
+.privacy:visited {
+  color: tomato;
 }
