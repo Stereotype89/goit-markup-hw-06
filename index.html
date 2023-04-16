@@ -420,6 +420,27 @@
             </li>
           </ul>
         </div>
+        <div class="div-subscribe-footer">
+          <label>
+            <span class="subscribe-footer">Subscribe</span>
+            <input
+              class="footer-input"
+              type="email"
+              name="email-subscribe"
+              id="email-subscribe"
+              placeholder="E-mail"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </label>
+        </div>
+        <div class="div-button-subscribe">
+          <button type="button" class="button-subscribe">
+            Subscribe
+            <svg width="24" height="20">
+              <use href="./images/icons.svg#icon-send" class="svg-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <!-- МОДАЛКА -->
@@ -430,6 +451,93 @@
             <use href="./images/icons.svg#icon-close" class="close-svg"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-label">
+            <span class="name-label">Name*</span>
+            <div class="div-modal-input">
+              <input
+                type="text"
+                name="Name"
+                class="modal-input"
+                required
+                autofocus
+              />
+              <svg class="svg-label-icon" width="14" height="14">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-label">
+            <span class="name-label">Phone*</span>
+            <div class="div-modal-input">
+              <input
+                type="phone"
+                name="Phone"
+                class="modal-input"
+                required
+                placeholder="+48 (00) 000-00-00"
+              />
+              <svg class="svg-label-icon" width="12" height="12">
+                <use
+                  href="./images/icons.svg#icon-phone"
+                  class="label-icon"
+                ></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-label">
+            <span class="name-label">Email*</span>
+            <div class="div-modal-input">
+              <input
+                type="email"
+                name="Email"
+                class="modal-input"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+              <svg class="svg-label-icon" width="13" height="13">
+                <use
+                  href="./images/icons.svg#icon-email-send"
+                  class="label-icon"
+                ></use>
+              </svg>
+            </div>
+          </label>
+
+          <div class="text-field">
+            <label class="input-text" for="user-text">Comment</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-text-area"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="div-check-box">
+            <label class="checkbox-label">
+              <input
+                class="input-checkbox visually-hidden"
+                id="privacy-policy"
+                name="privacy-policy"
+                type="checkbox"
+                value="true"
+              />
+              <span class="span-privacy">
+                <svg class="check-icon" width="10" height="8">
+                  <use
+                    href="./images/icons.svg#icon-vector-check"
+                    class="icon-check"
+                  ></use></svg></span
+              >I accept the terms and conditions of the &nbsp;
+              <a href="./index.html" class="privacy">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="buton-submit">Send</button>
+        </form>
       </div>
     </div>
     <!-- МОДАЛКА -->
