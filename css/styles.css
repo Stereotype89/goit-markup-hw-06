@@ -902,10 +902,12 @@ body {
 }
 
 .text-span-check {
+  display: flex;
   font-size: 12px;
   line-height: 1.16px;
   letter-spacing: 0.04em;
   color: var(--light_slate);
+  margin-top: 2px;
 }
 
 .privacy {
